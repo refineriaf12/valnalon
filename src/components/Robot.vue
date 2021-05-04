@@ -141,7 +141,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Robot",
 };
 
 window.onload = function() {
