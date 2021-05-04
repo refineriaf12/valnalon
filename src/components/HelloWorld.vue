@@ -1,60 +1,141 @@
 <template>
   <div class="hello">
-    <figure class="tamaño_M">
-      <img
-        src="@/assets/robot/cabeza.svg"
-        alt=""
-        class="active"
-        id="cabeza_M"
-      />
-    </figure>
+    <div>
+      <ul>
+        <li id="cabeza">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/cabeza.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/cabeza.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/cabeza.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="orejas">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/orejaI.svg" alt="" class="" id="" />
+            <img src="@/assets/robot/orejaD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/orejaI.svg" alt="" class="" id="" />
+            <img src="@/assets/robot/orejaD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/orejaI.svg" alt="" class="active" id="" />
+            <img src="@/assets/robot/orejaD.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="ojos">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/ojos.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/ojos.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/ojos.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="nariz">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/nariz.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/nariz.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/nariz.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="boca">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/boca.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/boca.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L">
+            <img src="@/assets/robot/boca.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+      </ul>
+    </div>
 
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/orejaD.svg" alt="" class="active" id="" />
-    </figure>
+    <canvas id="crear_robot" height="300" width="300" ></canvas>
 
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/boca.svg" alt="" class="active" id="cabeza_M" />
-    </figure>
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/nariz.svg" alt="" class="active" id="cabeza_M" />
-    </figure>
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/ojos.svg" alt="" class="active" id="cabeza_M" />
-    </figure>
+    <div>
+      <ul>
+        <li id="torso">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/torso.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/torso.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/torso.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="cozaron">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/corazon.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/corazon.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/corazon.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="brazos">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/brazoI.svg" alt="" class="" id="" />
+            <img src="@/assets/robot/brazoD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/brazoI.svg" alt="" class="" id="" />
+            <img src="@/assets/robot/brazoD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/brazoI.svg" alt="" class="active" id="" />
+            <img src="@/assets/robot/brazoD.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
 
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/torso.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/corazon.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/brazoD.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/piernas.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/pieD.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/orejaI.svg" alt="" class="active" id="" />
-    </figure>
-
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/brazoI.svg" alt="" class="active" id="" />
-    </figure>
-    <figure class="tamaño_M">
-      <img src="@/assets/robot/pieI.svg" alt="" class="active" id="" />
-    </figure>
-
-    <canvas id="crear_robot"></canvas>
+        <li id="piernas">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/piernas.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img src="@/assets/robot/piernas.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L">
+            <img src="@/assets/robot/piernas.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+        <li id="pies">
+          <figure class="tamaño_S">
+            <img src="@/assets/robot/pieI.svg" alt="" class="" id="pieI_S" />
+            <img src="@/assets/robot/pieD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_M selected">
+            <img
+              src="@/assets/robot/pieI.svg"
+              alt=""
+              class=""
+              id="pieI_M"
+            />
+            <img src="@/assets/robot/pieD.svg" alt="" class="" id="" />
+          </figure>
+          <figure class="tamaño_L ">
+            <img src="@/assets/robot/pieI.svg" alt="" class="active" id="pieI_L" />
+            <img src="@/assets/robot/pieD.svg" alt="" class="active" id="" />
+          </figure>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -65,24 +146,24 @@ export default {
 
 window.onload = function() {
   let canvas = document.getElementById("crear_robot");
-
   let ctx = canvas.getContext("2d");
 
   var robot = document.getElementsByClassName("active");
+  ctx.imageSmoothingEnabled = false;
   ctx.scale(0.3, 0.3);
-  ctx.drawImage(robot[8], 140, 280, 180, 200); //piernas
-  ctx.drawImage(robot[1], 280, 55, 55, 55); //oreja derecha
-  ctx.drawImage(robot[10], 108, 55, 55, 55); //oreja izq.
-  ctx.drawImage(robot[5], 150, 130, 155, 155); //torso
-  ctx.drawImage(robot[0], 150, 0); //cabeza
-  ctx.drawImage(robot[2], 203, 108, 40, 12); //boca
-  ctx.drawImage(robot[3], 215, 80, 15, 15); //nariz
-  ctx.drawImage(robot[4], 193, 71, 60, 10); //ojos
-  ctx.drawImage(robot[6], 210, 190, 40, 40); //corazon
-  ctx.drawImage(robot[7], 291, 210, 65, 120); //brazo derecho
-  ctx.drawImage(robot[11], 100, 210, 65, 120); //brazo izq
-  ctx.drawImage(robot[9], 255, 455, 90, 35); //pie derecho
-  ctx.drawImage(robot[12], 118, 455, 90, 35); //pie izq.
+  ctx.drawImage(robot[10], 325, 500, 350, 450); //piernas
+  ctx.drawImage(robot[1], 270, 115, 105, 125); //oreja izq.
+  ctx.drawImage(robot[2], 615, 115, 105, 125); //oreja derecha
+  ctx.drawImage(robot[6], 355, 280, 285, 255); //torso
+  ctx.drawImage(robot[0], 350, 0); //cabeza
+  ctx.drawImage(robot[5], 460, 215, 70, 30); //boca
+  ctx.drawImage(robot[4], 478, 165, 30, 35); //nariz
+  ctx.drawImage(robot[3], 425, 150, 140, 15 ); //ojos
+  ctx.drawImage(robot[7], 450, 380, 100, 100); //corazon
+  ctx.drawImage(robot[8], 225, 410, 160, 310); //brazo izq
+  ctx.drawImage(robot[9], 605, 410, 160, 310); //brazo derecho
+  ctx.drawImage(robot[11], 280, 900, 180, 65); //pie izq.
+  ctx.drawImage(robot[12], 555, 890, 180, 65); //pie derecho
 
   console.log(
     robot[0],
@@ -104,32 +185,48 @@ window.onload = function() {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-figure {
-  padding: 0.5vw;
-  cursor: pointer;
+div {
+  display: flex;
 }
 
-.active {
+figure {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  padding: 15px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+li {
+  display: flex;
+}
+
+.selected {
   border: 3px solid purple;
   border-radius: 50%;
 }
 
-.tamaño_S {
-  width: 2.5vw;
-  height: 2.5vw;
+.tamaño_S img {
+  transform: scale(0.8);
 }
-.tamaño_M {
-  width: 3vw;
-  height: 3vw;
+.tamaño_M img {
+  transform: scale(1);
 }
-.tamaño_L {
-  width: 3.5vw;
-  height: 3.5vw;
+.tamaño_L img {
+  transform: scale(1.2);
+}
+#pieI_S,
+#pieI_M,
+#pieI_L {
+  width: 0.5px;
+  height: 0.5px;
 }
 
 canvas {
-  width: 1000px;
-  height: 650px;
+
   border: 6px solid orange;
   display: block;
 }
