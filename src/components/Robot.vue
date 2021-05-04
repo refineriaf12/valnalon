@@ -62,9 +62,14 @@
         </li>
       </ul>
     </div>
+    <div>
+      <h1>La cabeza: Mas o menos grande segun tu capacidad de pensar y organizar</h1>
+    </div>
 
     <canvas id="crear_robot" height="300" width="300" ></canvas>
-
+    <div>
+      <h1>Las orejas: Mas o menos grandes segun tu capacidad de escuchar</h1>
+    </div>
     <div>
       <ul>
         <li id="torso">
@@ -187,6 +192,8 @@ window.onload = function() {
 <style scoped>
 div {
   display: flex;
+  justify-content:space-around;
+   margin:15px 0;
 }
 
 figure {
@@ -195,12 +202,13 @@ figure {
   cursor: pointer;
   display: flex;
   padding: 15px;
-}
+  }
 img {
   width: 100%;
   height: 100%;
 }
 li {
+  margin:15px 0;
   display: flex;
 }
 
