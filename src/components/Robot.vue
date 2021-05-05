@@ -241,6 +241,8 @@ li {
   background: #9e51ff;
   border: 5px solid orange;
   box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.5);
+  color:white;
+  padding:10px;
 }
 .bocadillo-izquierda:after,
 .bocadillo-izquierda:before {
@@ -271,7 +273,9 @@ li {
   position: relative;
   background: #9e51ff;
   border: 5px solid orange;
-  box-shadow: 1px 12px 31px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
 }
 .bocadillo-derecha:after,
 .bocadillo-derecha:before {
