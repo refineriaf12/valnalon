@@ -62,12 +62,14 @@
         </li>
       </ul>
     </div>
-    <div>
-      <h1>La cabeza: Mas o menos grande segun tu capacidad de pensar y organizar</h1>
+    <div class="bocadillo-izquierda">
+      <h1>
+        La cabeza: Mas o menos grande segun tu capacidad de pensar y organizar
+      </h1>
     </div>
 
-    <canvas id="crear_robot" height="300" width="300" ></canvas>
-    <div>
+    <canvas id="crear_robot" height="300" width="300"></canvas>
+    <div class="bocadillo-derecha">
       <h1>Las orejas: Mas o menos grandes segun tu capacidad de escuchar</h1>
     </div>
     <div>
@@ -126,16 +128,16 @@
             <img src="@/assets/robot/pieD.svg" alt="" class="" id="" />
           </figure>
           <figure class="tamaño_M selected">
-            <img
-              src="@/assets/robot/pieI.svg"
-              alt=""
-              class=""
-              id="pieI_M"
-            />
+            <img src="@/assets/robot/pieI.svg" alt="" class="" id="pieI_M" />
             <img src="@/assets/robot/pieD.svg" alt="" class="" id="" />
           </figure>
           <figure class="tamaño_L ">
-            <img src="@/assets/robot/pieI.svg" alt="" class="active" id="pieI_L" />
+            <img
+              src="@/assets/robot/pieI.svg"
+              alt=""
+              class="active"
+              id="pieI_L"
+            />
             <img src="@/assets/robot/pieD.svg" alt="" class="active" id="" />
           </figure>
         </li>
@@ -163,7 +165,7 @@ window.onload = function() {
   ctx.drawImage(robot[0], 350, 0); //cabeza
   ctx.drawImage(robot[5], 460, 215, 70, 30); //boca
   ctx.drawImage(robot[4], 478, 165, 30, 35); //nariz
-  ctx.drawImage(robot[3], 425, 150, 140, 15 ); //ojos
+  ctx.drawImage(robot[3], 425, 150, 140, 15); //ojos
   ctx.drawImage(robot[7], 450, 380, 100, 100); //corazon
   ctx.drawImage(robot[8], 225, 410, 160, 310); //brazo izq
   ctx.drawImage(robot[9], 605, 410, 160, 310); //brazo derecho
@@ -192,8 +194,8 @@ window.onload = function() {
 <style scoped>
 div {
   display: flex;
-  justify-content:space-around;
-   margin:15px 0;
+  justify-content: space-around;
+  margin: 15px 0;
 }
 
 figure {
@@ -202,13 +204,13 @@ figure {
   cursor: pointer;
   display: flex;
   padding: 15px;
-  }
+}
 img {
   width: 100%;
   height: 100%;
 }
 li {
-  margin:15px 0;
+  margin: 15px 0;
   display: flex;
 }
 
@@ -232,9 +234,70 @@ li {
   width: 0.5px;
   height: 0.5px;
 }
+.bocadillo-izquierda {
+  height: 100px;
+  width: 300px;
+  position: relative;
+  background: #9e51ff;
+  border: 5px solid orange;
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.5);
+}
+.bocadillo-izquierda:after,
+.bocadillo-izquierda:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.bocadillo-izquierda:after {
+  border-color: rgba(158, 81, 255, 0);
+  border-left-color: #9e51ff;
+  border-width: 20px;
+  margin-top: -20px;
+}
+.bocadillo-izquierda:before {
+  border-color: rgba(235, 255, 181, 0);
+  border-left-color: orange;
+  border-width: 27px;
+  margin-top: -27px;
+}
+.bocadillo-derecha {
+  height: 100px;
+  width: 300px;
+  position: relative;
+  background: #9e51ff;
+  border: 5px solid orange;
+  box-shadow: 1px 12px 31px rgba(0, 0, 0, 0.5);
+}
+.bocadillo-derecha:after,
+.bocadillo-derecha:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.bocadillo-derecha:after {
+  border-color: rgba(158, 81, 255, 0);
+  border-right-color: #9e51ff;
+  border-width: 20px;
+  margin-top: -20px;
+}
+.bocadillo-derecha:before {
+  border-color: rgba(235, 255, 181, 0);
+  border-right-color: orange;
+  border-width: 27px;
+  margin-top: -27px;
+}
 
 canvas {
-
   border: 6px solid orange;
   display: block;
 }
