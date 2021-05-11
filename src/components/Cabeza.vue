@@ -1,116 +1,106 @@
 <template>
-  <div>
-    <ul>
-      <li id="cabeza">
-        <figure class="tamaño_S" @click ="TamañoMenos">
-          <img src="@/assets/robot/cabeza.svg" alt="" class="" id="" />
-        </figure>
-        <figure class="tamaño_M selected">
-          <img src="@/assets/robot/cabeza.svg" alt="" class="" id="" />
-        </figure>
-        <figure class="tamaño_L">
-          <img src="@/assets/robot/cabeza.svg" alt="" class="active" id="" />
-        </figure>
-      </li>
-    </ul>
-    <canvas id="crear_robot" height="500" width="500"></canvas>
-  </div>
+  <v-stage
+    ref="stage"
+    :config="stageSize"
+    @mousedown="handleStageMouseDown"
+    @touchstart="handleStageMouseDown"
+  >
+    <v-layer ref="layer">
+      <v-rect
+        v-for="item in rectangles"
+        :key="item.id"
+        :config="item"
+        @transformend="handleTransformEnd"
+      />
+      <v-transformer ref="transformer" />
+    </v-layer>
+  </v-stage>
 </template>
 
 <script>
+import Konva from "konva";
+const width = window.innerWidth;
+const height = window.innerHeight;
 export default {
-  name: "Cabeza",
+  name: "app",
 
-  data(){
-    return{
-      el:'#cabeza',
-      vueCanvas:null,
-      ejex: 0,
-      ejey:0,
-      ancho: 80,
-      alto: 80,
-
-    }
+  data() {
+    return {
+      stageSize: {
+        width: width,
+        height: height,
+      },
+      rectangles: [
+        {
+          rotation: 0,
+          x: 10,
+          y: 10,
+          width: 100,
+          height: 100,
+          scaleX: 1,
+          scaleY: 1,
+          fill: "red",
+          name: "rect1",
+          draggable: true,
+        },
+      ],
+      selectedShapeName: "",
+    };
   },
-    mounted(){
-        let canvas = document.getElementById("crear_robot");
-        let ctx = canvas.getContext("2d");
-        this.vueCanvas = ctx;
-        var robot = document.getElementsByClassName("active");
-        this.vueCanvas.drawImage(robot[0], this.ejex, this.ejey, this.ancho, this.alto); //cabeza
-        
-        
+  methods: {
+    handleTransformEnd(e) {
+      const rect = this.rectangles.find(
+        (r) => r.name === this.selectedShapeName
+      );
+
+      rect.x = e.target.x();
+      rect.y = e.target.y();
+      rect.rotation = e.target.rotation();
+      rect.scaleX = e.target.scaleX();
+      rect.scaleY = e.target.scaleY();
+
+      rect.fill = Konva.Util.getRandomColor();
     },
-    methods: {
-       
+    handleStageMouseDown(e) {
+      if (e.target === e.target.getStage()) {
+        this.selectedShapeName = "";
+        this.updateTransformer();
+        return;
+      }
 
-       tamañoMenos(){
-          this.ancho -=10;
-          this.alto -= 10;
-          
+      const clickedOnTransformer =
+        e.target.getParent().className === "Transformer";
+      if (clickedOnTransformer) {
+        return;
+      }
 
-       }
+      const name = e.target.name();
+      const rect = this.rectangles.find((r) => r.name === name);
+      if (rect) {
+        this.selectedShapeName = name;
+      } else {
+        this.selectedShapeName = "";
+      }
+      this.updateTransformer();
     },
-     beforeMount(){
-       
-     
-     }
+    updateTransformer() {
+      const transformerNode = this.$refs.transformer.getNode();
+      const stage = transformerNode.getStage();
+      const { selectedShapeName } = this;
 
-  
-  }
+      const selectedNode = stage.findOne("." + selectedShapeName);
 
+      if (selectedNode === transformerNode.node()) {
+        return;
+      }
 
-
-
-
-
-
-
+      if (selectedNode) {
+        transformerNode.nodes([selectedNode]);
+      } else {
+        transformerNode.nodes([]);
+      }
+      transformerNode.getLayer().batchDraw();
+    },
+  },
+};
 </script>
-
-
-
-
-<style scoped>
-div {
-  display: flex;
-  justify-content: space-around;
-  margin: 15px 0;
-}
-
-figure {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  display: flex;
-  padding: 15px;
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-li {
-  margin: 15px 0;
-  display: flex;
-}
-
-.selected {
-  border: 3px solid purple;
-  border-radius: 50%;
-}
-
-.tamaño_S img {
-  transform: scale(0.8);
-}
-.tamaño_M img {
-  transform: scale(1);
-}
-.tamaño_L img {
-  transform: scale(1.2);
-}
-
-canvas {
-  border: 6px solid orange;
-  display: block;
-}
-</style>
