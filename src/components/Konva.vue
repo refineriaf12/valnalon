@@ -1,50 +1,45 @@
 <template>
   <div id="app">
-    <img :src="image" />
-    <v-stage ref="stage" :config="stageSize">
+    <v-stage ref="stage"   :config="canvas">
       <v-layer ref="layer">
-        <!-- <v-image
-         
-            :config="{
-            image: image,
-            x: 150,
-            y: 150,
+        <v-image
+          @dragstart="handleDragStart"
+          @dragend="handleDragEnd"
+          :config="{
+            image: nariz,
+            x: 50,
+            y: 50,
             draggable: true,
-                      }"/> -->
+          }"
+        />
       </v-layer>
     </v-stage>
+    
   </div>
 </template>
 <script>
-import image from "@/assets/logo.png";
 const width = window.innerWidth;
 const height = window.innerHeight;
-
 
 export default {
   name: "app",
   data() {
     return {
-      image: image,
-      stageSize: {
+      canvas: {
         width: width,
         height: height,
-       
-       
+        
       },
-
-      isDragging: false,
-      image: image,
+      nariz: null,
     };
   },
   created() {
-    const imageObj = new window.Image();
-    imageObj.src = "../assets/logo.png";
-    imageObj.onload = () => {
-      
-      this.imageObj = image;
+    const nariz= new window.Image();
+    nariz.src =
+      "https://gist.githubusercontent.com/diazgjulian/94101cb9314f60c705c4b6beb06fce6e/raw/e3224f65be86ee400f95130b44cbc79a813fad82/nariz.svg";
+    nariz.onload = () => {
+      this.nariz = nariz;
     };
-    
   },
 
   methods: {
@@ -57,3 +52,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+canvas {
+  border: 6px solid orange;
+  display: block;
+}
+</style>
