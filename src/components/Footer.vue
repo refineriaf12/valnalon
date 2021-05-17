@@ -15,7 +15,7 @@
 <style scoped>
   div{     
      height:80px;
-     border-top:6px solid #9E51FF;
+     border-top:6px solid #8C52FF;
      display:flex;
      justify-content:space-evenly;
      align-content: space-around;

@@ -6,7 +6,7 @@
 <style scoped>
  div{
       height:80px;
-      background-color:#9E51FF;
+      background-color:#8C52FF  ;
      display: flex;
      justify-content:center;
      align-items:center;
