@@ -1,7 +1,9 @@
 <template>
   <div class="piezas">
+    
     <v-stage
       class="lienzo"
+      id="lienzo"
       ref="stage"
       :config="stageSize"
       @mousedown="handleStageMouseDown"
@@ -11,6 +13,7 @@
         <v-transformer ref="transformer" />
       </v-layer>
     </v-stage>
+    <button @click="descargaImagen">Descarga</button>
   </div>
 </template>
 <script>
@@ -267,19 +270,30 @@ export default {
       }
       transformerNode.getLayer().batchDraw();
     },
+    guardaImagen(uri, name) {
+      var link = document.createElement("a");
+      link.download = name;
+      link.href = uri;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      // delete link;
+    },
+    descargaImagen() {
+      var dataURL = stage.toDataURL({ pixelRatio: 3 });
+      this.guardaImagen(dataURL, "stage.png");
+    },
   },
 };
 </script>
 <style scoped>
-.piezas{
+.piezas {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 .lienzo {
   width: 410px;
   height: 600px;
   border: 5px solid orange;
-  
-  
 }
 </style>
