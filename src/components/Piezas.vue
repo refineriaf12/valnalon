@@ -6,16 +6,22 @@
       :config="stageSize"
       @mousedown="handleStageMouseDown"
     >
+    
       <v-layer ref="layer">
+        <v-rect :config="{
+          x: 275,
+          y: 0,
+          width: 1,
+          height: 750,
+          fill: 'red',
+          
+        }"
+      />
         <v-image v-for="item in images" :key="item.id" :config="item" />
         <v-transformer ref="transformer" />
       </v-layer>
     </v-stage>
-    <div id="save">
-      <button>
-        <span>Guardado</span>
-      </button>
-    </div>
+    
   </div>
 </template>
 <script>
@@ -25,13 +31,14 @@ export default {
   data() {
     return {
       stageSize: {
-        width: 400,
-        height: 850,
+        width: 550,
+        height: 750,
       },
       images: [
+
         {
           image: null,
-          x: 128,
+          x: 200,
           y: 420,
           width: 150,
           height: 260,
@@ -40,7 +47,7 @@ export default {
         },
         {
           image: null,
-          x: 122,
+          x: 194,
           y: 275,
           width: 160,
           height: 150,
@@ -49,7 +56,7 @@ export default {
         },
         {
           image: null,
-          x: 250,
+          x: 322,
           y: 200,
           width: 30,
           height: 55,
@@ -58,7 +65,7 @@ export default {
         },
         {
           image: null,
-          x: 120,
+          x: 192,
           y: 200,
           width: 30,
           height: 55,
@@ -67,7 +74,7 @@ export default {
         },
         {
           image: null,
-          x: 140,
+          x: 212,
           y: 150,
           width: 120,
           height: 135,
@@ -76,7 +83,7 @@ export default {
         },
         {
           image: null,
-          x: 175,
+          x: 245,
           y: 340,
           width: 55,
           height: 55,
@@ -85,7 +92,7 @@ export default {
         },
         {
           image: null,
-          x: 175,
+          x: 247,
           y: 210,
           width: 50,
           height: 10,
@@ -94,7 +101,7 @@ export default {
         },
         {
           image: null,
-          x: 195,
+          x: 267,
           y: 220,
           width: 10,
           height: 15,
@@ -103,7 +110,7 @@ export default {
         },
         {
           image: null,
-          x: 184,
+          x: 254,
           y: 240,
           width: 35,
           height: 15,
@@ -112,7 +119,7 @@ export default {
         },
         {
           image: null,
-          x: 262,
+          x: 334,
           y: 350,
           width: 55,
           height: 175,
@@ -121,7 +128,7 @@ export default {
         },
         {
           image: null,
-          x: 85,
+          x: 157,
           y: 350,
           width: 55,
           height: 175,
@@ -130,7 +137,7 @@ export default {
         },
         {
           image: null,
-          x: 220,
+          x: 294,
           y: 640,
           width: 80,
           height: 40,
@@ -139,7 +146,7 @@ export default {
         },
         {
           image: null,
-          x: 120,
+          x: 196,
           y: 650,
           width: 60,
           height: 30,
@@ -279,46 +286,13 @@ export default {
   display: flex;
   justify-content: center;
   margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .lienzo {
-  width: 410px;
-  height: 820px;
+  width: 560px;
+  height: 760px;
   border: 5px solid orange;
 }
-#save {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background: #8C52FF;
-}
 
-button {
-  border: 5px solid orange;
-  background: transparent;
-
-  color: white;
-  padding: 15px 50px;
-
-  overflow: hidden;
-  position: relative;
-}
-
-button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -36px;
-  left: -100px;
-  background: white;
-  width: 60px;
-  height: 125px;
-  opacity: 40%;
-  transform: rotate(-45deg);
-}
-
-button:hover:after {
-  left: 120%;
-  transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
-  -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
-}
 </style>
