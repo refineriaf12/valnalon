@@ -151,78 +151,91 @@ export default {
   },
   created() {
     const piernas = new window.Image();
+    piernas.crossOrigin = 'Anonymous';
     piernas.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=piernas.png";
     piernas.onload = () => {
       this.images[0].image = piernas;
     };
     const torso = new window.Image();
+    torso.crossOrigin = 'Anonymous';
     torso.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=torso.png";
     torso.onload = () => {
       this.images[1].image = torso;
     };
     const orejaDer = new window.Image();
+    orejaDer.crossOrigin = 'Anonymous';
     orejaDer.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=orejaDe.png";
     orejaDer.onload = () => {
       this.images[2].image = orejaDer;
     };
     const orejaIzq = new window.Image();
+    orejaIzq.crossOrigin = 'Anonymous';
     orejaIzq.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=orejaIz.png";
     orejaIzq.onload = () => {
       this.images[3].image = orejaIzq;
     };
     const cabeza = new window.Image();
+    cabeza.crossOrigin = 'Anonymous';
     cabeza.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=cabeza.png";
     cabeza.onload = () => {
       this.images[4].image = cabeza;
     };
     const corazon = new window.Image();
+    corazon.crossOrigin = 'Anonymous';
     corazon.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=corazon.png";
     corazon.onload = () => {
       this.images[5].image = corazon;
     };
     const ojos = new window.Image();
+    ojos.crossOrigin = 'Anonymous';
     ojos.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=ojos.png";
     ojos.onload = () => {
       this.images[6].image = ojos;
     };
     const nariz = new window.Image();
+    nariz.crossOrigin = 'Anonymous';
     nariz.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=nariz.png";
     nariz.onload = () => {
       this.images[7].image = nariz;
     };
     const boca = new window.Image();
+    boca.crossOrigin = 'Anonymous';
     boca.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=boca.png";
     boca.onload = () => {
       this.images[8].image = boca;
     };
     const brazoDer = new window.Image();
+    brazoDer.crossOrigin = 'Anonymous';
     brazoDer.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=brazoDe.png";
     brazoDer.onload = () => {
       this.images[9].image = brazoDer;
     };
     const brazoIzq = new window.Image();
+    brazoIzq.crossOrigin = 'Anonymous';
     brazoIzq.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=brazoIz.png";
     brazoIzq.onload = () => {
       this.images[10].image = brazoIzq;
     };
     const pieDer = new window.Image();
+    pieDer.crossOrigin = 'Anonymous';
     pieDer.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=pieDe.png";
     pieDer.onload = () => {
       this.images[11].image = pieDer;
     };
     const pieIzq = new window.Image();
+    pieIzq.crossOrigin = 'Anonymous';
     pieIzq.src =
       "http://owncloud.valnalon.com/index.php/s/Oy6pcf3LEYr3BgM/download?path=%2FF5-ROBOT&files=pieIz.png";
     pieIzq.onload = () => {
@@ -280,11 +293,13 @@ export default {
       // delete link;
     },
     descargaImagen() {
+      const stage = this.$refs.stage.getStage()
       var dataURL = stage.toDataURL({ pixelRatio: 3 });
       this.guardaImagen(dataURL, "stage.png");
     },
   },
 };
+
 </script>
 <style scoped>
 .piezas {
