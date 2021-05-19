@@ -4,11 +4,26 @@
       <h1>Las orejas: Mas o menos grandes segun tu capacidad de escuchar</h1>
     </div>
     <div class="bocadillo-derecha">
-      <h1>Las orejas: Mas o menos grandes segun tu capacidad de escuchar
-          Las orejas: Mas o menos grandes segun tu capacidad de escuchar
-          Las orejas: Mas o menos grandes segun tu capacidad de escuchar
+      <h1>La nariz: Más o menos grande según sea tu “olfato” para percibir ocasiones
+        y oportunidades.
       </h1>
     </div>
+    <div class="bocadillo-derecha">
+      <h1>El corazón: Más o menos grande según la calidad de tus valores 
+        y de tu compromiso social
+      </h1>
+    </div>
+     <div class="bocadillo-derecha">
+      <h1>Los brazos y manos: Más o menos largos según tu capacidad de “llegar” 
+        con la acción,de hacer(tus habilidades más prácticas).
+      </h1>
+    </div>
+     <div class="bocadillo-derecha">
+      <h1>Las piernas: Más o menos grandes según sea tu capacidad de “recorrer” la realidad,
+        la calle,de pasar a la acción, de tomar la iniciativa para proponer cosas.
+      </h1>
+    </div>
+    
   </div>
 </template>
 <script>
@@ -20,7 +35,7 @@ export default {
 </script>
 <style scoped>
 .der{
-padding:30px;
+padding:50px;
 }
 .bocadillo-derecha {
   width: 100%;

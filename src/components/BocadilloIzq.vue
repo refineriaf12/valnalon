@@ -1,5 +1,5 @@
 <template>
-   <div class="izq">
+  <div class="izq">
     <div class="bocadillo-izquierda">
       <h1>
         La cabeza: Mas o menos grande segun tu capacidad de pensar y organizar
@@ -7,43 +7,52 @@
     </div>
     <div class="bocadillo-izquierda">
       <h1>
-        La cabeza: Mas o menos grande se gun tu capacidad de pensar y organizargun tu capacidad de pensar y organizar gun tu capacidad de pensar y organizar
+        Los ojos :Más o menos grandes,según sea tu capacidad de observar la realidad,
+        la propia y la del entorno
       </h1>
     </div>
-
+    <div class="bocadillo-izquierda">
+      <h1>
+        La boca: Más o menos grande según sea la capacidad de comunicarte, de hacer
+        llegar tus mensajes
+      </h1>
+    </div>
+    <div class="bocadillo-izquierda">
+      <h1>
+        El tronco: Más o menos grande según sea tu capacidad de “estructurar” y relacionar 
+        te con tu equipo de trabajo
+      </h1>
+    </div>
+    <div class="bocadillo-izquierda">
+      <h1>
+        Los pies: Más o menos grandes según sean los “apoyos”,la base social,la conexión 
+        con la realidad
+      </h1>
+    </div>
     
-  
-
-   </div>
-    
+  </div>
 </template>
 
 <script>
 export default {
   name: "BocadilloIzq",
 };
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
-.izq{
- padding:30px;
-
+.izq {
+  padding: 50px;
 }
 .bocadillo-izquierda {
   width: 100%;
-  padding:15px;
+  padding: 15px;
   position: relative;
   background: white;
   border: 5px solid #9e51ff;
   box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.5);
-  margin:15px 0;
+  margin: 15px 0;
   color: #9e51ff;
-  
 }
 .bocadillo-izquierda:after,
 .bocadillo-izquierda:before {
@@ -68,7 +77,4 @@ export default {
   border-width: 27px;
   margin-top: -27px;
 }
-
-
-
 </style>

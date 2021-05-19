@@ -20,10 +20,11 @@ div {
   justify-content: space-evenly;
   align-content: space-around;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  
+ 
   width: 100%;
+  background-color: white;
+  
 }
 figure {
   width: 80px;

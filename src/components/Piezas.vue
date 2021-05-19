@@ -13,7 +13,7 @@
       </v-layer>
     </v-stage>
     <section class="guardar">
-      <button @click="descargaImagen">Descarga</button>
+      <button class= "fill" @click="descargaImagen">Descarga</button>
     </section>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
         {
           image: null,
           x: 200,
-          y: 420,
+          y: 390,
           width: 150,
           height: 260,
           name: "piernas",
@@ -41,7 +41,7 @@ export default {
         {
           image: null,
           x: 194,
-          y: 275,
+          y: 245,
           width: 160,
           height: 150,
           name: "torso",
@@ -50,7 +50,7 @@ export default {
         {
           image: null,
           x: 322,
-          y: 200,
+          y: 170,
           width: 30,
           height: 55,
           name: "orejaDer",
@@ -59,7 +59,7 @@ export default {
         {
           image: null,
           x: 192,
-          y: 200,
+          y: 170,
           width: 30,
           height: 55,
           name: "orejaIzq",
@@ -68,7 +68,7 @@ export default {
         {
           image: null,
           x: 212,
-          y: 150,
+          y: 120,
           width: 120,
           height: 135,
           name: "cabeza",
@@ -77,7 +77,7 @@ export default {
         {
           image: null,
           x: 245,
-          y: 340,
+          y: 310,
           width: 55,
           height: 55,
           name: "corazon",
@@ -86,7 +86,7 @@ export default {
         {
           image: null,
           x: 247,
-          y: 210,
+          y: 180,
           width: 50,
           height: 10,
           name: "ojos",
@@ -95,7 +95,7 @@ export default {
         {
           image: null,
           x: 267,
-          y: 220,
+          y: 190,
           width: 10,
           height: 15,
           name: "nariz",
@@ -104,7 +104,7 @@ export default {
         {
           image: null,
           x: 254,
-          y: 240,
+          y: 210,
           width: 35,
           height: 15,
           name: "boca",
@@ -113,7 +113,7 @@ export default {
         {
           image: null,
           x: 334,
-          y: 350,
+          y: 320,
           width: 55,
           height: 175,
           name: "brazoDer",
@@ -122,7 +122,7 @@ export default {
         {
           image: null,
           x: 157,
-          y: 350,
+          y: 320,
           width: 55,
           height: 175,
           name: "brazoIzq",
@@ -131,7 +131,7 @@ export default {
         {
           image: null,
           x: 294,
-          y: 640,
+          y: 610,
           width: 80,
           height: 40,
           name: "pieDer",
@@ -140,7 +140,7 @@ export default {
         {
           image: null,
           x: 196,
-          y: 650,
+          y: 620,
           width: 60,
           height: 30,
           name: "pieIzq",
@@ -289,11 +289,37 @@ export default {
 };
 </script>
 <style scoped>
-.piezas {
-}
 .lienzo {
   width: 560px;
   height: 760px;
   border: 5px solid #9e51ff;
+  margin-top:40px;
+}
+.guardar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+ 
+}
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+.fill {
+  --color: #a972cb;
+  --hover: #9e51ff;
+}
+button {
+  color: var(--color);
+  border: 5px solid #9e51ff;
+  background-color: white;
+  transition: 0.25s;
+  padding: 1em 2em;
+  
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: white;
 }
 </style>

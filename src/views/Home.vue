@@ -10,7 +10,7 @@
     </section>
 
     <section class="cuerpo">
-      <article class="bocadilloIzq"><BocadilloIzq/></article>
+      <article class="bocadilloIzq"><BocadilloIzq /></article>
       <article class="piezas"><Piezas /></article>
       <article class="bocadilloDer"><BocadilloDer /></article>
     </section>
@@ -34,7 +34,7 @@ export default {
     Piezas,
     Footer,
     BocadilloIzq,
-    BocadilloDer
+    BocadilloDer,
   },
 };
 </script>
@@ -42,19 +42,29 @@ export default {
 .cuerpo {
   display: flex;
   width: 100%;
-justify-content: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: 130px;
 }
-.instrucciones,
-.boton {
+.instrucciones {
   width: 100%;
-  display: block;
+  display: flex;
+  margin-top: 20px;
+  color: #9e51ff;
+  justify-content: center;
 }
-.bocadilloIzq, .bocadilloDer{
+.instrucciones p {
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  border: 5px solid #9e51ff;
+  box-shadow: 1px 12px 31px rgba(0, 0, 0, 0.5);
+}
+.bocadilloIzq,
+.bocadilloDer {
   width: 33%;
-
 }
-.piezas{
+.piezas {
   width: 560px;
-   height: 750px;
+  height: 750px;
 }
 </style>
