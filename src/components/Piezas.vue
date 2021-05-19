@@ -283,7 +283,7 @@ export default {
     descargaImagen() {
       const stage = this.$refs.stage.getStage();
       var dataURL = stage.toDataURL({ pixelRatio: 3 });
-      this.guardaImagen(dataURL, "stage.png");
+      this.guardaImagen(dataURL, "MiRobot.png");
     },
   },
 };
