@@ -3,9 +3,11 @@
     <Header />
     <section class="instrucciones">
       <p>
-        Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en
-        demostraciones de tipografías o de borradores de diseño para probar el
-        diseño visual antes de insertar el texto fina
+        Instruciones de como jugar con cada parte del Robot; se puedem mover,
+        girar, transformar dando el  "clic" sobre la pieza correspiente. y colocarla dentro del lienzo donde cada niño/a
+        desee; para volver a empezar solo hay que reiniciar la pagina , ademas
+        se puede guardar la imagen de la composicion del Robot en el boton que
+        pone descarga
       </p>
     </section>
 

@@ -1,6 +1,24 @@
 <template>
   <div>
     <figure>
+      <img src="@/assets/logos/logo_ministerio.jpg" alt="" />
+    </figure>
+    <figure>
+      <img src="@/assets/logos/logo_sesepa.jpg" alt="" />
+    </figure>
+    <figure>
+      <img src="@/assets/logos/logo_gijonReinicia.jpg" alt="" />
+    </figure>
+    <figure>
+      <img src="@/assets/logos/logo_capgemini.png" alt="" />
+    </figure>
+    <figure>
+      <img src="@/assets/logos/logo_zing.svg" alt="" />
+    </figure>
+    <figure>
+      <img src="@/assets/logos/logo_FF5__simplon.svg" alt="" />
+    </figure>
+        <figure>
       <img src="@/assets/logos/logo_lila.svg" alt="" />
     </figure>
     <figure>
@@ -14,7 +32,7 @@
 
 <style scoped>
 div {
-  height: 80px;
+  
   border-top: 6px solid #9e51ff;
   display: flex;
   justify-content: space-evenly;
@@ -27,8 +45,8 @@ div {
   
 }
 figure {
-  width: 80px;
-  height: 80px;
+  
+  width:8%;
   display: flex;
   align-content: center;
 }
