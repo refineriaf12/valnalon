@@ -1,6 +1,5 @@
 <template>
   <div class="piezas">
-    
     <v-stage
       class="lienzo"
       id="lienzo"
@@ -8,12 +7,14 @@
       :config="stageSize"
       @mousedown="handleStageMouseDown"
     >
-      <v-layer ref="layer">
+      <v-layer class="prueba" ref="layer">
         <v-image v-for="item in images" :key="item.id" :config="item" />
         <v-transformer ref="transformer" />
       </v-layer>
     </v-stage>
-    <button @click="descargaImagen">Descarga</button>
+    <section class="guardar">
+      <button @click="descargaImagen">Descarga</button>
+    </section>
   </div>
 </template>
 <script>
@@ -24,14 +25,14 @@ export default {
   data() {
     return {
       stageSize: {
-        width: 400,
-        height: 600,
+        width: 550,
+        height: 750,
       },
       images: [
         {
           image: null,
-          x: 128,
-          y: 320,
+          x: 200,
+          y: 420,
           width: 150,
           height: 260,
           name: "piernas",
@@ -39,8 +40,8 @@ export default {
         },
         {
           image: null,
-          x: 122,
-          y: 175,
+          x: 194,
+          y: 275,
           width: 160,
           height: 150,
           name: "torso",
@@ -48,8 +49,8 @@ export default {
         },
         {
           image: null,
-          x: 250,
-          y: 100,
+          x: 322,
+          y: 200,
           width: 30,
           height: 55,
           name: "orejaDer",
@@ -57,8 +58,8 @@ export default {
         },
         {
           image: null,
-          x: 120,
-          y: 100,
+          x: 192,
+          y: 200,
           width: 30,
           height: 55,
           name: "orejaIzq",
@@ -66,8 +67,8 @@ export default {
         },
         {
           image: null,
-          x: 140,
-          y: 50,
+          x: 212,
+          y: 150,
           width: 120,
           height: 135,
           name: "cabeza",
@@ -75,8 +76,8 @@ export default {
         },
         {
           image: null,
-          x: 175,
-          y: 240,
+          x: 245,
+          y: 340,
           width: 55,
           height: 55,
           name: "corazon",
@@ -84,8 +85,8 @@ export default {
         },
         {
           image: null,
-          x: 175,
-          y: 110,
+          x: 247,
+          y: 210,
           width: 50,
           height: 10,
           name: "ojos",
@@ -93,8 +94,8 @@ export default {
         },
         {
           image: null,
-          x: 195,
-          y: 120,
+          x: 267,
+          y: 220,
           width: 10,
           height: 15,
           name: "nariz",
@@ -102,8 +103,8 @@ export default {
         },
         {
           image: null,
-          x: 184,
-          y: 140,
+          x: 254,
+          y: 240,
           width: 35,
           height: 15,
           name: "boca",
@@ -111,8 +112,8 @@ export default {
         },
         {
           image: null,
-          x: 262,
-          y: 250,
+          x: 334,
+          y: 350,
           width: 55,
           height: 175,
           name: "brazoDer",
@@ -120,8 +121,8 @@ export default {
         },
         {
           image: null,
-          x: 85,
-          y: 250,
+          x: 157,
+          y: 350,
           width: 55,
           height: 175,
           name: "brazoIzq",
@@ -129,8 +130,8 @@ export default {
         },
         {
           image: null,
-          x: 220,
-          y: 540,
+          x: 294,
+          y: 640,
           width: 80,
           height: 40,
           name: "pieDer",
@@ -138,8 +139,8 @@ export default {
         },
         {
           image: null,
-          x: 120,
-          y: 550,
+          x: 196,
+          y: 650,
           width: 60,
           height: 30,
           name: "pieIzq",
@@ -151,93 +152,80 @@ export default {
   },
   created() {
     const piernas = new window.Image();
-    piernas.crossOrigin = 'Anonymous';
-    piernas.src =
-      "https://i.imgur.com/4rCp93y.png";
+    piernas.crossOrigin = "Anonymous";
+    piernas.src = "https://i.imgur.com/4rCp93y.png";
     piernas.onload = () => {
       this.images[0].image = piernas;
     };
     const torso = new window.Image();
-    torso.crossOrigin = 'Anonymous';
-    torso.src =
-      "https://i.imgur.com/VPJBSr3.png";
+    torso.crossOrigin = "Anonymous";
+    torso.src = "https://i.imgur.com/VPJBSr3.png";
     torso.onload = () => {
       this.images[1].image = torso;
     };
     const orejaDer = new window.Image();
-    orejaDer.crossOrigin = 'Anonymous';
-    orejaDer.src =
-      "https://i.imgur.com/nakSnd8.png";
+    orejaDer.crossOrigin = "Anonymous";
+    orejaDer.src = "https://i.imgur.com/nakSnd8.png";
     orejaDer.onload = () => {
       this.images[2].image = orejaDer;
     };
     const orejaIzq = new window.Image();
-    orejaIzq.crossOrigin = 'Anonymous';
-    orejaIzq.src =
-      "https://i.imgur.com/Rj8Gke4.png";
+    orejaIzq.crossOrigin = "Anonymous";
+    orejaIzq.src = "https://i.imgur.com/Rj8Gke4.png";
     orejaIzq.onload = () => {
       this.images[3].image = orejaIzq;
     };
     const cabeza = new window.Image();
-    cabeza.crossOrigin = 'Anonymous';
-    cabeza.src =
-      "https://i.imgur.com/fiyDojQ.png";
+    cabeza.crossOrigin = "Anonymous";
+    cabeza.src = "https://i.imgur.com/fiyDojQ.png";
     cabeza.onload = () => {
       this.images[4].image = cabeza;
     };
     const corazon = new window.Image();
-    corazon.crossOrigin = 'Anonymous';
-    corazon.src =
-      "https://i.imgur.com/GaHwz1W.png";
+    corazon.crossOrigin = "Anonymous";
+    corazon.src = "https://i.imgur.com/GaHwz1W.png";
     corazon.onload = () => {
       this.images[5].image = corazon;
     };
     const ojos = new window.Image();
-    ojos.crossOrigin = 'Anonymous';
-    ojos.src =
-      "https://i.imgur.com/83eY2d1.png";
+    ojos.crossOrigin = "Anonymous";
+    ojos.src = "https://i.imgur.com/83eY2d1.png";
     ojos.onload = () => {
       this.images[6].image = ojos;
     };
     const nariz = new window.Image();
-    nariz.crossOrigin = 'Anonymous';
-    nariz.src =
-      "https://i.imgur.com/Zp3k8pK.png";
+    nariz.crossOrigin = "Anonymous";
+    nariz.src = "https://i.imgur.com/Zp3k8pK.png";
     nariz.onload = () => {
       this.images[7].image = nariz;
     };
     const boca = new window.Image();
-    boca.crossOrigin = 'Anonymous';
-    boca.src =
-      "https://i.imgur.com/N5zYgcN.png";
+    boca.crossOrigin = "Anonymous";
+    boca.src = "https://i.imgur.com/N5zYgcN.png";
     boca.onload = () => {
       this.images[8].image = boca;
     };
     const brazoDer = new window.Image();
-    brazoDer.crossOrigin = 'Anonymous';
-    brazoDer.src =
-      "https://i.imgur.com/yscWc0m.png";
+    brazoDer.crossOrigin = "Anonymous";
+    brazoDer.src = "https://i.imgur.com/yscWc0m.png";
     brazoDer.onload = () => {
       this.images[9].image = brazoDer;
     };
     const brazoIzq = new window.Image();
-    brazoIzq.crossOrigin = 'Anonymous';
-    brazoIzq.src =
-      "https://i.imgur.com/0X2BZQF.png";
+    brazoIzq.crossOrigin = "Anonymous";
+    brazoIzq.src = "https://i.imgur.com/0X2BZQF.png";
     brazoIzq.onload = () => {
       this.images[10].image = brazoIzq;
     };
     const pieDer = new window.Image();
-    pieDer.crossOrigin = 'Anonymous';
-    pieDer.src =
-      "https://i.imgur.com/nL071ua.png";
+    pieDer.crossOrigin = "Anonymous";
+    pieDer.src = "https://i.imgur.com/nL071ua.png";
     pieDer.onload = () => {
       this.images[11].image = pieDer;
     };
     const pieIzq = new window.Image();
-    pieIzq.crossOrigin = 'Anonymous';
-    pieIzq.src =
-      "https://i.imgur.com/AqXNWM1.png";
+    pieIzq.crossOrigin = "Anonymous";
+    pieIzq.src = "https://i.imgur.com/AqXNWM1.png";
     pieIzq.onload = () => {
       this.images[12].image = pieIzq;
     };
@@ -293,22 +281,19 @@ export default {
       // delete link;
     },
     descargaImagen() {
-      const stage = this.$refs.stage.getStage()
+      const stage = this.$refs.stage.getStage();
       var dataURL = stage.toDataURL({ pixelRatio: 3 });
       this.guardaImagen(dataURL, "stage.png");
     },
   },
 };
-
 </script>
 <style scoped>
 .piezas {
-  display: flex;
-  justify-content: center;
 }
 .lienzo {
-  width: 410px;
-  height: 600px;
-  border: 5px solid orange;
+  width: 560px;
+  height: 760px;
+  border: 5px solid #9e51ff;
 }
 </style>
