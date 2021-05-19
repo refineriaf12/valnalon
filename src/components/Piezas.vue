@@ -316,6 +316,7 @@ button {
   background-color: white;
   transition: 0.25s;
   padding: 1em 2em;
+  box-shadow: 1px 12px 31px rgba(0, 0, 0, 0.5);
   
 }
 button:hover, button:focus {
