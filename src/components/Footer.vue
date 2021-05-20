@@ -18,7 +18,7 @@
     <figure>
       <img src="@/assets/logos/logo_FF5__simplon.svg" alt="" />
     </figure>
-        <figure>
+    <figure>
       <img src="@/assets/logos/logo_lila.svg" alt="" />
     </figure>
     <figure>
@@ -32,21 +32,16 @@
 
 <style scoped>
 div {
-  
   border-top: 6px solid #9e51ff;
   display: flex;
   justify-content: space-evenly;
   align-content: space-around;
   align-items: center;
-  
- 
   width: 100%;
   background-color: white;
-  
 }
 figure {
-  
-  width:8%;
+  width: 8%;
   display: flex;
   align-content: center;
 }

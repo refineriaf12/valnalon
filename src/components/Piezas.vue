@@ -293,7 +293,7 @@ export default {
   width: 560px;
   height: 760px;
   border: 5px solid #9e51ff;
-  margin-top:40px;
+ 
 }
 .guardar {
   display: flex;

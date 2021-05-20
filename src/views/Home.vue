@@ -4,7 +4,7 @@
     <section class="instrucciones">
       <p>
         Instruciones de como jugar con cada parte del Robot; se puedem mover,
-        girar, transformar dando el  "clic" sobre la pieza correspiente. y colocarla dentro del lienzo donde cada niño/a
+        girar, transformar dando el  "clic" sobre la pieza correspondiente. y colocarla dentro del lienzo donde cada niño/a
         desee; para volver a empezar solo hay que reiniciar la pagina , ademas
         se puede guardar la imagen de la composicion del Robot en el boton que
         pone descarga
@@ -50,7 +50,7 @@ export default {
 .instrucciones {
   width: 100%;
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
   color: #9e51ff;
   justify-content: center;
 }
