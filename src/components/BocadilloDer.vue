@@ -2,7 +2,7 @@
   <div class="der">
     <div class="bocadillo-derecha">
       <h1>
-        <span>Las Orejas</span>: Mas o menos grandes segun tu capacidad de escuchar
+        <span>Las Orejas</span>: Más o menos grandes segun tu capacidad de escuchar
       </h1>
     </div>
     <div class="bocadillo-derecha">
@@ -13,7 +13,7 @@
     </div>
     <div class="bocadillo-derecha">
       <h1>
-        <span>El Corazon</span>: Más o menos grande según la calidad de tus valores 
+        <span>El Corazón</span>: Más o menos grande según la calidad de tus valores 
         y de tu compromiso social
       </h1>
     </div>

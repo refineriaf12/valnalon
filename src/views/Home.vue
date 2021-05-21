@@ -3,11 +3,11 @@
     <Header />
     <section class="instrucciones">
       <p>
-        Instruciones de como jugar con cada parte del Robot; se puedem mover,
-        girar, transformar dando el  "clic" sobre la pieza correspondiente. y colocarla dentro del lienzo donde cada niño/a
-        desee; para volver a empezar solo hay que reiniciar la pagina , ademas
-        se puede guardar la imagen de la composicion del Robot en el boton que
-        pone descarga
+        <span>Diseña tu Robot jugando con las diferentes partes.</span> Cada parte se puede hacer
+        más grande o más pequeña, se puede mover, girar o colocar donde quieras.
+        Lee lo que representa cada pieza, haz “clic” sobre la pieza y juega.
+        Para volver a empezar sólo tienes que “reiniciar la página”. Al final te
+        podrás descargar TU RETRATO ROBOT. ¡Adelante!
       </p>
     </section>
 
@@ -68,5 +68,8 @@ export default {
 .piezas {
   width: 560px;
   height: 750px;
+}
+span{
+  font-weight:800;
 }
 </style>

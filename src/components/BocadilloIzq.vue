@@ -2,7 +2,7 @@
   <div class="izq">
     <div class="bocadillo-izquierda">
       <h1>
-        <span>La Cabeza</span>: Mas o menos grande segun tu capacidad de pensar y organizar
+        <span>La Cabeza</span>: Más o menos grande segun tu capacidad de pensar y organizar
       </h1>
     </div>
     <div class="bocadillo-izquierda">
