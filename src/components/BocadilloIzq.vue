@@ -2,30 +2,30 @@
   <div class="izq">
     <div class="bocadillo-izquierda">
       <h1>
-        La cabeza: Mas o menos grande segun tu capacidad de pensar y organizar
+        <span>La Cabeza</span>: Mas o menos grande segun tu capacidad de pensar y organizar
       </h1>
     </div>
     <div class="bocadillo-izquierda">
       <h1>
-        Los ojos :Más o menos grandes,según sea tu capacidad de observar la realidad,
+        <span>Los Ojos</span> :Más o menos grandes,según sea tu capacidad de observar la realidad,
         la propia y la del entorno
       </h1>
     </div>
     <div class="bocadillo-izquierda">
       <h1>
-        La boca: Más o menos grande según sea la capacidad de comunicarte, de hacer
+        <span>La Boca</span>: Más o menos grande según sea la capacidad de comunicarte, de hacer
         llegar tus mensajes
       </h1>
     </div>
     <div class="bocadillo-izquierda">
       <h1>
-        El tronco: Más o menos grande según sea tu capacidad de “estructurar” y relacionar 
+        <span>El Tronco</span>: Más o menos grande según sea tu capacidad de “estructurar” y relacionar 
         te con tu equipo de trabajo
       </h1>
     </div>
     <div class="bocadillo-izquierda">
       <h1>
-        Los pies: Más o menos grandes según sean los “apoyos”,la base social,la conexión 
+        <span>Los Pies</span>: Más o menos grandes según sean los “apoyos”,la base social,la conexión 
         con la realidad
       </h1>
     </div>
@@ -76,5 +76,9 @@ export default {
   border-left-color: #9e51ff;
   border-width: 27px;
   margin-top: -27px;
+}
+span{
+  font-weight:800;
+  
 }
 </style>

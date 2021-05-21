@@ -13,7 +13,7 @@
       </v-layer>
     </v-stage>
     <section class="guardar">
-      <button class= "fill" @click="descargaImagen">Descarga</button>
+      <button class= "relleno" @click="descargaImagen">Descarga Tú Robot</button>
     </section>
   </div>
 </template>
@@ -302,11 +302,11 @@ export default {
   margin-top: 20px;
  
 }
-.fill:hover,
-.fill:focus {
+.relleno:hover,
+.relleno:focus {
   box-shadow: inset 0 0 0 2em var(--hover);
 }
-.fill {
+.relleno {
   --color: #a972cb;
   --hover: #9e51ff;
 }
