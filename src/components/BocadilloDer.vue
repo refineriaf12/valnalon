@@ -34,9 +34,7 @@
 </template>
 <script>
 export default {
-    
-  name: "BocadilloDer",
-
+    name: "BocadilloDer",
 };
 </script>
 <style scoped>
@@ -78,6 +76,5 @@ padding:50px;
 }
 span{
   font-weight:800;
-  
-}
+  }
 </style>

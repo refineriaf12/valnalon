@@ -278,7 +278,7 @@ export default {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      // delete link;
+     
     },
     descargaImagen() {
       const stage = this.$refs.stage.getStage();
