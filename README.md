@@ -58,7 +58,7 @@ LinkedIn:
 
 * Comenta 🗨 a otros 🗣 sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* No despreciados que nos inviten a 🍖🥩🥓
+* Aceptamos que nos inviten a 🍖🥩🥓
 * Da las gracias públicamente 🤓😉.
 
 ---
