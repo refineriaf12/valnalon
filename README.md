@@ -46,12 +46,14 @@ _Ahora toca mencionar a los autores de este proyecto_
 GitHub:
 * **Iñigo Rafael Valdes Martinez**  👨‍💻 - *Desarrolladora Web FullStack* - [Inigo-coder](https://github.com/inigo-coder)
 * **Julian Diaz Garcia** 👨‍💻  - *Desarrollador Web FullStack* - [diazgjulian](https://github.com/diazgjulian)
+* **Hector Rueda** 👨‍💻  - *Desarrollador Web FullStack* - [UserRoot-lab](https://github.com/UserRoot-lab)
 * **Eduardo Rus** 👨‍💻 - *Desarrollador Web FullStack* - [rusgar](https://github.com/rusgar)
 
 LinkedIn:
 
 * [**Iñigo Rafael Valdes Martinez**](https://www.linkedin.com/in/i%C3%B1igo-rafael-valdes-martinez-925892189/)
 * [**Julian Diaz Garcia**](https://www.linkedin.com/in/julian-diaz-garcia/)
+* [**Hector Rueda**](https://www.linkedin.com/in/hector-developer-2021/)
 * [**Eduardo Rus**](https://www.linkedin.com/in/eduardo-rus-carretero-b839041bb/)
 
 ## Expresiones de Gratitud 🎁
