@@ -1,6 +1,6 @@
 # Robot
-Proyecto encargado por Valnalon-Proyecto Lila, para el desarrollo de un lienzo donde se pudiese reproducir por piezas las partes de
-un robot, para poder transformarlas, moverlas y a su vez guardarlas para futuras impresiones
+Proyecto encargado por Valnalon-Proyecto Lila💜, para el desarrollo de un lienzo donde se pudiese reproducir por piezas las partes de
+un robot, para poder transformarlas 🦾, moverlas 🦿 y a su vez guardarlas para futuras impresiones
 
 ## Project setup 🚀
 ```
@@ -28,7 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/). VUE
 
 See [Configuration Reference](https://konvajs.org/docs/vue/index.html) KONVA
 ```
-npm i konva
+npm i konva 🏗
 ```
 ```
 import VueKonva from 'vue-konva';
@@ -44,9 +44,9 @@ https://konvajs.org/
 _Ahora toca mencionar a los autores de este proyecto_
 
 GitHub:
-* **Iñigo Rafael Valdes Martinez** - *Desarrolladora Web FullStack* - [Inigo-coder](https://github.com/inigo-coder)
-* **Julian Diaz Garcia** - *Desarrollador Web FullStack* - [diazgjulian](https://github.com/diazgjulian)
-* **Eduardo Rus** - *Desarrollador Web FullStack* - [rusgar](https://github.com/rusgar)
+* **Iñigo Rafael Valdes Martinez**  👨‍💻 - *Desarrolladora Web FullStack* - [Inigo-coder](https://github.com/inigo-coder)
+* **Julian Diaz Garcia** 👨‍💻  - *Desarrollador Web FullStack* - [diazgjulian](https://github.com/diazgjulian)
+* **Eduardo Rus** 👨‍💻 - *Desarrollador Web FullStack* - [rusgar](https://github.com/rusgar)
 
 LinkedIn:
 
@@ -56,9 +56,10 @@ LinkedIn:
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
+* Comenta 🗨 a otros 🗣 sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+* No despreciados que nos inviten a 🍖🥩🥓
+* Da las gracias públicamente 🤓😉.
 
 ---
-Hecho con ❤️❤️❤️ por el equipo de Refineria F12 durante el BootCamp de [Factoria F5](https://www.rompemosloscodigos.org/) 😊
+Hecho con 💟 por el equipo de Refineria F12 durante el BootCamp de [Factoria F5](https://www.rompemosloscodigos.org/) 😊
