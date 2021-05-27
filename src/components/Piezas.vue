@@ -13,7 +13,7 @@
       </v-layer>
     </v-stage>
     <section class="guardar">
-      <button class= "relleno" @click="descargaImagen">Descarga Tú Robot</button>
+      <button class= "relleno" @click="descargaImagen">Descarga Tu Robot</button>
     </section>
   </div>
 </template>
